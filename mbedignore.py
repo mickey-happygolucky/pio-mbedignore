@@ -33,4 +33,4 @@ def mbedignore():
 
 
 mbedignore()
-env.AddPreAction("buildprog", clean_mbedignore)
+env.AddPostAction("checkprogsize", clean_mbedignore)
